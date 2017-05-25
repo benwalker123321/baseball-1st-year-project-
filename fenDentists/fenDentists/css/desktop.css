@@ -1,0 +1,143 @@
+	/* CSS FOR MAIN WEBSITE STYLE*/
+
+	/* The DIV Elements */
+
+	body{
+		background-color: green;
+	}
+	
+		#wrapper{
+			margin: 0 auto;
+			float:center;
+			height:500px;
+			width: 310px;
+			background-color:white;
+			position:relative; 
+		}
+
+
+		#appointmentFormContent{
+			height:500px;
+			width:310px;
+			background-color:#33AD5C;
+		}
+		
+		#staffInfoContent{
+			height:500px;
+			width:310px;
+			background-color:#33AD5C;
+			display: none; 
+		}
+	
+		#formCanvas{
+			z-index:1;
+			width:310px;
+			height:400px;
+			position:absolute;
+			float: center;
+			border:1px solid black;
+			background-color:#33AD5C;
+			}
+		
+		#appointmentForm{
+			z-index:2;
+			margin: 0 auto;
+			width:310px;
+			height:455px;
+			float:center;
+			position:absolute;		
+		}
+		
+		#selectDentist{
+			Z-index:3;
+			margin: 0 auto;
+			width:310px;
+			height:30px;
+			position:relative;
+		
+		}
+		
+		/*Table Styling*/
+		#staffInfo{
+			z-index:4;
+			width:300px;
+			height: 200px; 
+			position:absolute;	
+			display: block;	
+		
+		}
+		
+		#janeSmithTimetable{
+			z-index:5;
+			width:310px;
+			height: 200px; 
+			position:absolute;	
+			display: none;	
+		}
+		
+		#garyLaneTimetable{
+			z-index:6;
+			width:310px;
+			height: 200px; 
+			position:absolute;	
+			display:none;	
+		}
+		
+		
+		#davidNorbertTimetable{
+			z-index:7;
+			width:310px;
+			height: 200px; 
+			position:absolute;	
+			display:none;	
+		}
+		
+		
+		#sallyGoldTimetable{
+			z-index:8;
+			width:310px;
+			height: 200px; 
+			position:absolute;	
+			display:none;	
+		}
+		
+		 td{
+			border:1px solid black;
+			color:yellow;
+		}
+		 th{
+			border:1px solid black;
+			color:black;
+		}
+		
+	
+		#footer{
+			z-index:9;
+			height:40px;
+			width:310px;
+			position:absolute;
+			background-color:#33AD5C;
+		}
+	
+	/*Header and Paragraph styling*/
+		
+			h1{
+				font-size:1.1em;
+				text-align:center;
+				color:black;
+			}
+			h2{
+				font-size:0.8em;
+				text-align:center;
+				color:black; 
+			}
+
+			
+			
+		
+
+	
+
+		
+			
+			

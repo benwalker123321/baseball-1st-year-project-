@@ -1,0 +1,547 @@
+<!doctype html>
+<html>  <!-- (W3schools,2014)-->
+    
+    <head>
+        <!-- Mobile application title-->
+        <title>Fens Dentists Appointment Booker</title>
+        <!-- Meta Tags-->
+        <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+        <meta name="Description" content="dentists,book appointment" />
+        <meta name="Keywords" Content="dentists,book appointment" />
+        <!--Supporting Stylesheets-->
+        <link type="text/css" rel="stylesheet" href="css/desktop.css" media="screen and (min-width:310px)"/>  <!-- (W3schools,2014)-->
+        <link type="text/css" rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" media="only screen and (min-width:310px)"/>		
+        <link type="text/css" rel="stylesheet" href="css/mobile.css" media="only screen and (max-width:310px)" />
+        <!-- Supporting Scripts-->
+        <script type="text/javascript" src="javascript/main.js">
+            
+        </script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+ 
+    </head>
+    
+    <body  onload="load()">
+        <div id="wrapper">
+            <div id="appointmentFormContent">
+                	<h1>Fensdentists Appointment Booker Mobile Application</h1>
+
+                <!-- Appointment Form-->
+                <form id="appointmentForm">
+                    	<h1>Appointment Form</h1>
+
+                     <h2> Full Name</h2>
+
+                    <input type="text" id="fullName" /> <!-- (W3schools,2014)--> <!--(jQuery Mobile,2014)-->
+                    	<h2> Choose a Dentist</h2> 
+                    <select id="dentistName" />
+                    <option>Jane Smith</option>
+                    <option>Gary Lane</option>
+                    <option>David Norbert</option>
+                    <option>Sally Gold</option>
+                    </select>
+                    	<h2>Choose a Time</h2>
+
+                    <select id="time" />
+                    <option>9am</option>
+                    <option>10am</option>
+                    <option>11am</option>
+                    <option>12pm</option>
+                    <option>1pm</option>
+                    <option>2pm</option>
+                    <option>3pm</option>
+                    <option>4pm</option>
+                    <option>5pm</option>
+                    <option>6pm</option>
+                    </select>
+                    	<h2>Choose a Day</h2>
+
+                    <select id="day"/>
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                    <option>Thursday</option>
+                    <option>Friday</option>
+                    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" data-enhanced="true" value="Book Appointment" onclick="booking()"> <!--(jQuery Mobile, 2014) -->
+                    <input type="reset" data-enhanced="true" value="clear" />
+                </form>
+                <!--Supporting canvas for Appointment Form-->
+                <canvas id="formCanvas">
+				
+				</canvas>
+            </div>
+            <div id="staffInfoContent">
+                	<h1>Fensdentists Appointment Booker Mobile Application</h1>
+
+                <div id="selectDentist">
+                    <select id="timetableChoice" onchange="selectStaffElement()">
+                        <option>Select Dentist Timetable</option>
+                        <option value="staffInfoOption">Staff Working Time/Days</option> <!--(jQuery Mobile,2014)-->
+                        <option value="janeSmithOption">Jane Smith Timetable</option>
+                        <option value="garyLaneOption">Gary Lane Timetable</option>
+                        <option value="davidNorbertOption">David Norbert Timetable</option>
+                        <option value="sallyGoldOption">Sally Gold Timetable</option>
+                    </select>
+                </div>
+                <br>
+                <br>
+                <table id="staffInfo">
+                    <tr>
+                        <th colspan="3">Staff Working Days/Hours</th> <!-- (W3schools,2014)-->
+                    </tr>
+                    <tr>
+                        <th>Staff</th>
+                        <th>Days</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <th>Jane Smith</th>
+                        <td>Monday to Friday</td>
+                        <td>9am to 1pm</td>
+                    </tr>
+                    <tr>
+                        <th>Gary Lane</th>
+                        <td>Monday to Friday</td>
+                        <td>9am to 1pm</td>
+                    </tr>
+                    <tr>
+                        <th>David Norbert</th>
+                        <td>Monday to Friday</td>
+                        <td>2pm to 6pm</td>
+                    </tr>
+                    <tr>
+                        <th>Sally Gold</th>
+                        <td>Monday to Friday</td>
+                        <td>2pm to 6pm</td>
+                    </tr>
+                </table>
+                <!--- Jane Smith TimeTable-->
+                <table id="janeSmithTimetable">
+                    <tr>
+                        <th colspan="7">Jane Smith's Timetable</th>
+                    </tr>
+                    <tr>
+                        <th>Day</th>
+                        <th>9am</th>
+                        <th>10am</th>
+                        <th>11am</th>
+                        <th>12pm</th>
+                        <th>1pm</th>
+                    </tr>
+                    <tr>
+                        <th>Mon</th>
+                        <td>
+                            <input type="text" id="JSM9am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSM10am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSM11am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSM12pm" size="3" style="color:blue"  Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSM1pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Tue</th>
+                        <td>
+                            <input type="text" id="JSTu9am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSTu10am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSTu11am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSTu12pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSTu1pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Wed</th>
+                        <td>
+                            <input type="text" id="JSW9am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSW10am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSW11am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSW12pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSW1pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Thur</th>
+                        <td>
+                            <input type="text" id="JSTh9am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSTh10am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSTh11am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSTh12pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSTh1pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Fri</th>
+                        <td>
+                            <input type="text" id="JSF9am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSF10am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSF11am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSF12pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="JSF1pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                </table>
+                <!-- Gary Lane TimeTable-->
+                <table id="garyLaneTimetable">
+                    <tr>
+                        <th colspan="7">Gary Lane's Timetable</th>
+                    </tr>
+                    <tr>
+                        <th>Day</th>
+                        <th>9am</th>
+                        <th>10am</th>
+                        <th>11am</th>
+                        <th>12pm</th>
+                        <th>1pm</th>
+                    </tr>
+                    <tr>
+                        <th>Mon</th>
+                        <td>
+                            <input type="text" id="GLM9am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLM10am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLM11am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLM12pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLM1pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Tue</th>
+                        <td>
+                            <input type="text" id="GLTu9am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLTu10am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLTu11am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLTu12pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLTu1pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Wed</th>
+                        <td>
+                            <input type="text" id="GLW9am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLW10am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLW11am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLW12pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLW1pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Thur</th>
+                        <td>
+                            <input type="text" id="GLTh9am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLTh10am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLTh11am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLTh12pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLTh1pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Fri</th>
+                        <td>
+                            <input type="text" id="GLF9am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLF10am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLF11am" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLF12pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="GLF1pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                </table>
+                <!--- David Norbert TimeTable-->
+                <table id="davidNorbertTimetable">
+                    <tr>
+                        <th colspan="7">David Norbert's Timetable</th>
+                    </tr>
+                    <tr>
+                        <th>Day</th>
+                        <th>2pm</th>
+                        <th>3pm</th>
+                        <th>4pm</th>
+                        <th>5pm</th>
+                        <th>6pm</th>
+                    </tr>
+                    <tr>
+                        <th>Mon</th>
+                        <td>
+                            <input type="text" id="DNM2pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNM3pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNM4pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNM5pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNM6pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Tue</th>
+                        <td>
+                            <input type="text" id="DNTu2pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNTu3pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNTu4pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNTu5pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNTu6pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Wed</th>
+                        <td>
+                            <input type="text" id="DNW2pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNW3pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNW4pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNW5pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNW6pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Thur</th>
+                        <td>
+                            <input type="text" id="DNTh2pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNTh3pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNTh4pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNTh5pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNTh6pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Fri</th>
+                        <td>
+                            <input type="text" id="DNF2pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNF3pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNF4pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNF5pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="DNF6pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                </table>
+                <!--- Sally Gold TimeTable-->
+                <table id="sallyGoldTimetable">
+                    <tr>
+                        <th colspan="7">Sally Gold's Timetable</th>
+                    </tr>
+                    <tr>
+                        <th>Day</th>
+                        <th>2pm</th>
+                        <th>3pm</th>
+                        <th>4pm</th>
+                        <th>5pm</th>
+                        <th>6pm</th>
+                    </tr>
+                    <tr>
+                        <th>Mon</th>
+                        <td>
+                            <input type="text" id="SGM2pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGM3pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGM4pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGM5pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGM6pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Tue</th>
+                        <td>
+                            <input type="text" id="SGTu2pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGTu3pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGTu4pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGTu5pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGTu6pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Wed</th>
+                        <td>
+                            <input type="text" id="SGW2pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGW3pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGW4pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGW5pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGW6pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Thur</th>
+                        <td>
+                            <input type="text" id="SGTh2pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGTh3pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGTh4pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGTh5pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGTh6pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Fri</th>
+                        <td>
+                            <input type="text" id="SGF2pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGF3pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGF4pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGF5pm" size="3" style="color:blue" Disabled />
+                        </td>
+                        <td>
+                            <input type="text" id="SGF6pm" size="3" style="color:blue" Disabled />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="footer">
+                <center>
+                    <input type="button" name="About" value="About" data-enhanced="true" onclick="about()"> <!--(jQuery Mobile,2014)-->
+                    <input type="button" id="staffInfoBtn" value="Staff Information" data-enhanced="true" onclick="staffInfo()">
+                    <input type="button" id="bookingFormBtn" style="display:none" value="Booking Form" data-enhanced="true" onclick="bookForm()">
+                    <input type="button" name="Help" value="Help" data-enhanced="true" onclick="help()">
+                </center>
+            </div>
+        </div>
+    </body>
+
+</html>
