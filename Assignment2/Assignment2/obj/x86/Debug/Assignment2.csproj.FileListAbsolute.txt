@@ -1,0 +1,31 @@
+C:\Users\Ben\Programs (C#)\Assignment2\Assignment2\bin\Debug\Assignment2.exe
+C:\Users\Ben\Programs (C#)\Assignment2\Assignment2\bin\Debug\Assignment2.pdb
+C:\Users\Ben\Programs (C#)\Assignment2\Assignment2\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Ben\Programs (C#)\Assignment2\Assignment2\obj\x86\Debug\Assignment2.csproj.GenerateResource.Cache
+C:\Users\Ben\Programs (C#)\Assignment2\Assignment2\obj\x86\Debug\Assignment2.exe
+C:\Users\Ben\Programs (C#)\Assignment2\Assignment2\obj\x86\Debug\Assignment2.pdb
+C:\Users\Ben\Programs (C#)\Assignment2\Assignment2\obj\x86\Debug\Assignment2.csprojResolveAssemblyReference.cache
+E:\Assignment2\Assignment2\obj\x86\Debug\Assignment2.exe
+E:\Assignment2\Assignment2\obj\x86\Debug\Assignment2.pdb
+E:\Assignment2\Assignment2\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Assignment2\Assignment2\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+E:\Assignment2\Assignment2\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+E:\Assignment2\Assignment2\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Assignment2\Assignment2\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Assignment2\Assignment2\bin\Debug\Assignment2.exe
+E:\Assignment2\Assignment2\bin\Debug\Assignment2.pdb
+C:\Users\Ben\Programs (C#)\Assignment2\Assignment2\obj\x86\Debug\WindowsFormsApplication1.ElectroPet2012.resources
+C:\Users\Ben\Desktop\Assignment2\Assignment2\obj\x86\Debug\Assignment2.exe
+C:\Users\Ben\Desktop\Assignment2\Assignment2\obj\x86\Debug\Assignment2.pdb
+C:\Users\Ben\Desktop\Assignment 2\Assignment2\Assignment2\obj\x86\Debug\Assignment2.exe
+C:\Users\Ben\Desktop\Assignment 2\Assignment2\Assignment2\obj\x86\Debug\Assignment2.pdb
+C:\Users\Ben\Desktop\Assignment2\Assignment2\bin\Debug\Assignment2.exe
+C:\Users\Ben\Desktop\Assignment2\Assignment2\bin\Debug\Assignment2.pdb
+C:\Users\Ben\Desktop\Assignment2\Assignment2\obj\x86\Debug\Assignment2.csprojResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\Assignment2\Assignment2\obj\x86\Debug\WindowsFormsApplication1.ElectroPet2012.resources
+C:\Users\Ben\Desktop\Assignment2\Assignment2\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Ben\Desktop\Assignment2\Assignment2\obj\x86\Debug\Assignment2.csproj.GenerateResource.Cache
+C:\Users\Ben\Assignment2\Assignment2\obj\x86\Debug\Assignment2.exe
+C:\Users\Ben\Assignment2\Assignment2\obj\x86\Debug\Assignment2.pdb
+C:\Users\Ben\Uni Work\Year 1\Sem 1\Intro to Programming\Assignment2\Assignment2\obj\x86\Debug\Assignment2.exe
+C:\Users\Ben\Uni Work\Year 1\Sem 1\Intro to Programming\Assignment2\Assignment2\obj\x86\Debug\Assignment2.pdb
