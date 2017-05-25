@@ -1,0 +1,226 @@
+/*body
+.............................*/
+		body{
+				font: 62.5%/1.5 Arial, Hevertica, sans-serif; 
+				Background-Color:#0D1822;
+			}
+
+/*Wrapper
+.............................*/
+	#Wrapper{
+
+				box-shadow:5px 5px 5px gray; 
+				border:solid black; 
+				margin:0 auto;
+				height: 783px;
+				width:1220px;
+				background-color:#9B0000;
+			}
+
+/*Header
+.............................*/
+
+		header {
+
+					box-shadow:5px 5px 5px gray;	
+						margin:0 auto;
+						background-color:#003366;
+						height:100px;
+						width: 1220px;
+						border:solid black;
+
+				}
+/*Header h1 
+.............................*/
+				
+			header h1 {
+						text-shadow:2px 2px 2px yellow;	
+						font-size:2.7em;
+						color:gold;
+						text-align:center; 
+					}
+/*HeaderRight
+.............................*/					
+								
+		#HeaderRight {
+						-webkit-border-radius:20px;
+						 -moz-border-radius:20px;
+						 border-radius:20px;
+						border:solid black;  
+						width:180px;
+						height:80px;
+						float:right;
+						background-color:#003366;
+					 }
+					
+/*HeaderLeft
+.............................*/					
+					
+		#HeaderLeft {
+						width:110px;
+						height:100px;
+						float:left; 
+						background-color:#003366;
+					}
+/*Content
+.............................*/	
+				
+		#content{
+					background-color:#0080FF;
+					width:1220px;
+					height:750px;
+					float: right;
+					border-bottom:solid black;
+				}
+						
+/*LeftMiddle
+.............................*/
+
+		#leftmiddle{
+						display:block; 
+						float: left; 
+						width: 150px;
+						height: 750px;
+						margin:10px; 
+					}		
+/*Navigation Bar
+.............................*/					
+		#nav{
+
+				margin:0;
+				padding:0;
+			}
+
+		#nav ul {
+					margin:0;
+					padding:0;
+					line-height:30px;
+			  }
+
+		#nav li{
+					margin:1px;
+					padding:0;
+					list-style:none;
+					float: left; 
+					position:relative;
+			  }
+
+		#nav li a {
+					-webkit-border-radius:20px;
+					 -moz-border-radius:20px;
+					 border-radius:20px; 
+					top:10px;
+					border:solid black;
+					text-align:center; 
+					font-family: "Arial",cursive;
+					height: 25px;
+					width:150px;
+					display:block;
+					background-color:#003366;
+					color:gold;
+				}
+
+		#nav li a:hover {
+						-webkit-border-radius:20px;
+						 -moz-border-radius:20px;
+						 border-radius:20px; 
+						top:10px;
+						border:solid black;
+						text-align:center; 
+						font-family: "Arial",cursive;
+						height: 25px;
+						width:150px;
+						display:block;
+						background-color:black;
+						color:White;
+					}
+		#nav ul ul {
+					postion:absolute;
+					top: 50px;
+		 
+				}
+
+		#nav li:hover {
+						font-weight:bold;
+						
+					}
+
+		}
+		
+		#nav #active a {
+						background-color:red;
+						text-decoration:none;
+			
+					  }
+
+/*RightMiddle
+.............................*/
+		#rightmiddle{
+						display:block; 
+						float: right; 
+						width: 135px;
+						height: 750px; 
+						margin:20px; 
+					}
+/*Footer
+.............................*/
+		#footer {
+					background-color:#0065CB;
+					width:1220px;
+					height:31px;
+					display:block;
+					clear: both;
+				}
+
+/*paragraph formatting
+.............................*/
+		P{		
+			text-align:center;
+			font-size:1.4em;
+			color:gold;	
+		 }
+
+		P1{		
+				text-align:right;
+				font-size:1.0em;
+				color:black;
+		  }
+		P2{		
+				text-align:right;
+				font-size:1.0em;
+		   }
+
+/*Header formatting 
+.............................*/
+
+		h2{
+				font-size:1.8em;
+				text-align:center;
+		  }
+
+		h3{
+				font-size:1.4em;
+		  }
+
+		h4{
+				font-size:1.5em;
+				position:relative;
+				display: inline;
+				left:180px;
+				font-style:bold; 
+		  }
+
+		h5{
+				font-size: 1.5em;
+				display:inline;
+				position:relative;
+				left:590px;
+		  }
+
+		h6{
+				font-size:1em;
+				display:inline;
+				position:relative;
+		  }
+
+

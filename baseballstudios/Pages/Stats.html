@@ -1,0 +1,524 @@
+<!doctype html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8"/>
+			<meta name= "Description" content="Baseball"/>
+			<meta name="Keywords" Content="Baseball,MLB"/>
+			<title>BWS-MLB Stats</title>
+			<link href="../CSS/main.css" rel= "stylesheet" type="text/css"/>
+			<script type= "text/javascript" src="../JavaScript/main.js"></script>
+			<link rel= "icon" type= "image/bmp" href= "../Images/bws2.bmp"/> 
+			<!--[if lt IE 9]>
+			<script src="dist/html5shiv.js"></script>
+			<![endif]-->
+			<style>
+			#Wrapper{
+	
+	
+					height: 993px;
+					
+				}
+				
+			#content {
+
+					
+					height:960px;
+	
+				}
+
+
+			
+			</style>
+		</head>
+		<body>		<!-----Start of Body---->
+											<header> 	<!-----Start of Header------>
+				
+					<div id="HeaderLeft">	<!-----Start of HeaderLeft------>
+			
+						<img src="../Images/bws.bmp" alt="Baseball World Studios Logo" width= "100" height= "100"/>	
+			
+					</div><!-----End of HeaderLeft------>
+					
+				<div id="HeaderRight"> <!-----Start of HeaderRight------>
+			<br>
+				<center>
+			
+				<center><h6> <span id ="dtField"></span></h6></center>
+				<br>
+				<center><h6 id="TheTime"> </h6></center>
+				
+</center>
+				
+				
+				</div> <!-----End of HeaderRight------>
+				
+					<h1>BASEBALL WORLD STUDIOS</h1>	
+					</header> <!-----End of Header------>
+					
+				<div id="Wrapper"> <!-----Start of wrapper------>
+				
+				<div id="content"> <!---------Start Of Content------->
+	<br>			
+	
+ 				<div id="leftmiddle"> <!---------Start Of LeftMiddle------->
+				
+				<div id="nav">	<!---------Start Of Nav------->
+				
+					<ul>
+					
+					<li><a href="../index.html">Home</a></li>
+					
+					<li><a href="Teams.html"><i>Teams(MLB)</i></a></li>
+					
+					<li><a href="Schedule.html"><i>Schedule(MLB)</i></a></li>
+					
+					<li><a href="Results.html"><i>Results(MLB)</i></a></li>
+					
+					<li><a href="Standings.html"><i>Standings(MLB)</i></a></li>
+					
+					<li><a href="Stats.html"><i>Stats(MLB)</i></a></li>
+					
+			
+					
+					<li><a href="History.html"><i>Baseball History</i></a></li>
+					
+					<li><a href="Records.html"><i>Records</i></a></li>
+					
+					<li><a href="HallofFame.html"><i> Hall of Fame</i></a></li>
+				
+				
+					<li><a href="News.html"><i>News</i></a></li>
+					
+					<li><a href="International.html"><i>International</i></a></li>	
+					
+					<li><a href="Downloads.html"></i> Downloads</i> </a></li>
+				
+					<li><a href="About.html"><i>About</i></a></li>
+				
+					<li><a href="FAQ.html"><i>FAQ</i></a></li>
+					
+					<li><a href="Contact.html"><i>Contact Us</i></a></li>
+					
+					
+					</ul>
+				
+					</div>  <!-----end of nav------>
+					</div>	<!-----end of leftmiddle------>	
+				
+				<div id="rightmiddle"> <!----Start of RightMiddle------> 
+		
+				<center><a href="#footer">Bottom of page</a></center>
+				
+					<table border = 2 width= 110px align= "center">
+					<tr>
+					<th colspan="2">Control Panel</th>
+					</tr>
+					
+					<tr>
+					<tr>
+					<th>Colour Schemes</th>
+					</tr>
+					<tr>
+						<td align="center">
+			
+					
+								<input type="submit" value="Red" Onclick="document.fgColor='Red'"> 
+								
+								<input type="submit" value="Blue" Onclick="document.fgColor='Blue'"> 
+
+								<input type="submit" value="Green" Onclick="document.fgColor='Green'"> 
+							
+								<input type="submit" value="Yellow" Onclick="document.fgColor='Yellow'"> 
+								
+								<input type="submit" value="Default" onclick= "document.fgColor='Black'"> 
+						</td>
+					</tr>
+					<tr>
+					<tr>
+					<th>Change Time Format</th>
+					</tr>
+					<tr>
+					<td align = "center">
+					<form action= "#"> 
+					
+						<input type="radio" name= "timeClock" id="set24" checked="checked"/><label for="set24"> 24 Hour Format</label> &nbsp;&nbsp;
+						<br>
+						<input type="radio" name= "timeClock" id="set12"/><label for="set12"> 12 Hour Format</label>
+			
+						  </form>
+							</td>
+					</tr>
+					<tr>
+						<td>  
+							<a href= "http://www.google.com"><img src="../Images/google.png" alt= "link to google.com" width ="40" height= "40"></a>
+							<a href= "http://www.youtube.com"><img src="../Images/Youtube.png" alt= "link to Youtube.com" width ="40" height= "40"></a> 
+						<br>
+							<a href= "http://www.facebook.com"><img src="../Images/facebook.png" alt= "link to facebook.com" width ="40" height= "40"></a> 
+							<a href= "http://www.twitter.com"><img src="../Images/twitter.jpg" alt= "link to twitter.com" width ="40" height= "40"></a> </td>
+						</tr>
+						<tr>
+							<td align ="center"> <input type="button" onclick="help()" value="Help!"/> </td>
+						</tr>
+			
+				</table>
+				</center>
+				<br>
+				<img src= "../Images/Banner1.png" width="150px" height= "150px" align= "center" id="adBanner" alt = "BaseBall World Studios always keeping you updated" />  
+
+				</div> <!-----End of RightMiddle------>
+					
+				<center><h2> Major League Baseball Stats</h2></center>	
+				
+				<p1 style =" position:relative; display:inline;left:5px">This pages will show you the stats for Batting average,homeruns and Runs batted in. You have the option
+				to see the NL,AL and overall MLB leaderboards by clicking on the buttons above the tables</p1>	
+
+
+<form action = "gotoLocation.cgi">
+
+<select id ="ChoosenDivision">
+
+<option value ="../Pages/Stats.html"selected ="selected">Choose an option</option>
+<option value ="../Pages/Stats.html">MLB</option>
+<option value ="../Pages/StatsAL.html">American League</option>
+<option value ="../Pages/StatsNL.html">National League</option>
+
+</select>
+
+</form>
+							<hr width= 870px color=black ></hr>
+							<center><h3>MLB Leaderboards</h3></center>
+								<hr width= 870px color=black ></hr>
+
+     <h4>Batting</h4>                           <h5>Pitching</h5>
+<table border= "0" width = 850px>
+<td></td>
+<td><table border= "2" width= "425px">
+ <tr>
+    <th colspan = "4"> <u><b>Batting Averages(B/A)</b></u></th>
+  </tr>
+  
+	<tr>
+ 
+    <th width= "20px"><b> Position</b></th>
+    <th><b> Player</b></th>
+    <th><b> Team</b></th>		
+    <th><b> B/A</b></th>
+	</tr>
+	<tr>
+		<td align = "center">1st</p1></td>
+		<td>Albert Pyjols</td>
+		<td>L.A Angels</td>			
+		<td align = "center"> 0.750</td>
+
+    </tr>
+	
+	<tr>
+	<td align = "center">2nd</td>
+	<td>Jeff Baker</td>
+	<td>Chicago Cubs</td>
+	<td align = "center">0.750</td>
+
+	</tr>
+	<tr>
+	<td align = "center">3rd</td>
+	<td>Buster Posey</td>
+	<td>SF Giants</td>
+	<td align = "center">0.666</td>
+	</tr>
+	<tr>
+	<td align = "center">4th</td>
+	<td>Josh Hamilton</td>
+	<td>L.A Angels</td>
+	<td align = "center">0.500</td>
+	
+	</tr>
+	<tr>
+	<td align = "center">5th</td>
+	<td>Evan Longoria</td>
+	<td>TB Rays</td>
+	<td align = "center">0.500</td>
+	</tr>
+	
+	</td>
+</table>
+
+
+<td><table border= "2" width= "425px">
+ <tr>
+    <th colspan = "4"> <u><b>Wins</b></u></th>
+  </tr>
+  
+	<tr>
+ 
+    <th width= "20px"><b> Position</b></th>
+    <th><b> Player</b></th>
+    <th><b> Team</b></th>		
+    <th><b> Wins</b></th>
+	</tr>
+	<tr>
+		<td align = "center">1st</p1></td>
+		<td>Derek Holland</td>
+		<td>Texas Rangers</td>			
+		<td align = "center">1</td>
+
+    </tr>
+	
+	<tr>
+	<td align = "center">2nd</td>
+	<td>Matt Cain</td>
+	<td>SF Giants</td>
+	<td align = "center">1</td>
+
+	</tr>
+	<tr>
+	<td align = "center">3rd</td>
+	<td>David Price</td>
+	<td>TB Rays</td>
+	<td align = "center">1</td>
+	</tr>
+	<tr>
+	<td align = "center">4th</td>
+	<td>Felix Hernandez</td>
+	<td>Settle Mariners</td>
+	<td align = "center">1</td>
+	
+	</tr>
+	<tr>
+	<td align = "center">5th</td>
+	<td>Barry Zito</td>
+	<td>SF Giants</td>
+	<td align = "center">1</td>
+	</tr>
+	
+	
+</table>
+</td>
+</table>
+
+<table border= "0" width = 850px>
+<td></td>
+<td><table border= "2" width= "425px">
+<tr>
+    <th colspan = "4"> <u><b>Home Runs(HRs)</b></u></th>
+  </tr>
+  
+	<tr>
+ 
+    <th width= "20px"><b> Position</b></th>
+    <th><b> Player</b></th>
+    <th><b> Team</b></th>		
+    <th><b> HRs</b></th>
+	</tr>
+	<tr>
+		<td align = "center">1st</p1></td>
+		<td>Albert Plyols</td>
+		<td>L.A Angels</td>			
+		<td align = "center">3</td>
+
+    </tr>
+	
+	<tr>
+	<td align = "center">2nd</td>
+	<td>Buster Posey</td>
+	<td>SF Giants</td>			
+	<td align = "center">3</td>
+
+	</tr>
+	<tr>
+	<td align = "center">3rd</td>
+	<td>Jeff Baker</td>
+	<td>Chicago Cubs</td>
+	<td align = "center">2</td>
+	</tr>
+	<tr>
+	<td align = "center">4th</td>
+	<td>Curtis Granderson</td>
+	<td>NY Yankees</td>
+	<td align = "center">1</td>
+	
+	</tr>
+	<tr>
+	<td align = "center">5th</td>
+	<td>Josh Hamilton</td>
+	<td>L.A Angels</td>
+	<td align = "center">1</td>
+	</tr>
+	
+
+</table>
+</td>
+	<td><table border= "2" width= "425px">
+<tr>
+    <th colspan = "4"> <u><b>Earned Run Average(ERA)</b></u></th>
+  </tr>
+  
+	<tr>
+ 
+    <th width= "20px"><b> Position</b></th>
+    <th><b> Player</b></th>
+    <th><b> Team</b></th>		
+    <th><b> ERA</b></th>
+	</tr>
+	<tr>
+		<td align = "center">1st</p1></td>
+		<td>Derek Holland</td>
+		<td>Texas Rangers</td>			
+		<td align = "center">0.00</td>
+
+    </tr>
+	
+	<tr>
+	<td align = "center">2nd</td>
+	<td>Travis Wood</td>
+	<td>Chicago Cubs</td>			
+	<td align = "center">0.00</td>
+
+	</tr>
+	<tr>
+	<td align = "center">3rd</td>
+	<td>David Price</td>
+	<td>TB Rays</td>
+	<td align = "center">0.00</td>
+	</tr>
+	<tr>
+	<td align = "center">4th</td>
+	<td>Barry Zito</td>
+	<td>SF Giants</td>
+	<td align = "center">0.00</td>
+	
+	</tr>
+	<tr>
+	<td align = "center">5th</td>
+	<td>Alex White</td>
+	<td>Houston Astros</td>
+	<td align = "center">0.00</td>
+	</tr>
+	
+
+</table>
+</td>
+</table>
+
+<table border= "0" width = 850px>	
+<td></td>	
+<td><table border= "2" width= "425px">
+<tr>
+    <th colspan = "4"> <u><b>Runs Batted in(RBI)</b></u></th>
+  </tr>
+  
+	<tr>
+ 
+    <th width= "20px"><b> Position</b></th>
+    <th><b> Player</b></th>
+    <th><b> Team</b></th>		
+    <th><b> RBIs</b></th>
+	</tr>
+	<tr>
+		<td align = "center">1st</p1></td>
+		<td>Jeff Baker</td>
+		<td>Chicago Cubs</td>			
+		<td align = "center">6</td>
+
+    </tr>
+	
+	<tr>
+	<td align = "center">2nd</td>
+	<td>Buster Posey</td>
+	<td>SF Giants</td>
+	<td align = "center">5</td>
+
+	</tr>
+	<tr>
+	<td align = "center">3rd</td>
+	<td>Albert Pyjols</td>
+	<td>L.A Angels</td>			
+	<td align = "center">4</td>
+	</tr>
+	<tr>
+	<td align = "center">4th</td>
+	<td>Brandon Belt</td>
+	<td>SF Giants</td>
+	<td align = "center">4</td>
+	
+	</tr>
+	<tr>
+	<td align = "center">5th</td>
+	<td>Evan Longoria</td>
+	<td>TB Rays</td>
+	<td align = "center">3</td>
+	</tr>
+	</table>
+	
+	<td><table border= "2" width= "425px">
+<tr>
+    <th colspan = "4"> <u><b>Strikeouts(SO)</b></u></th>
+  </tr>
+  
+	<tr>
+ 
+    <th width= "20px"><b> Position</b></th>
+    <th><b> Player</b></th>
+    <th><b> Team</b></th>		
+    <th><b> SO</b></th>
+	</tr>
+	<tr>
+		<td align = "center">1st</p1></td>
+		<td>Derek Holland</td>
+		<td>Texas Rangers</td>			
+		<td align = "center">9</td>
+
+    </tr>
+	
+	<tr>
+	<td align = "center">2nd</td>
+	<td>Felix Hernandez</td>
+	<td>Settle Mariners</td>
+	<td align = "center">7</td>
+
+	</tr>
+	<tr>
+	<td align = "center">3rd</td>
+	<td>Barry Zito</td>
+	<td>SF Giants</td>			
+	<td align = "center">7</td>
+	</tr>
+	<tr>
+	<td align = "center">4th</td>
+	<td>Travis Wood</td>
+	<td>Chicargo Cubs</td>
+	<td align = "center">6</td>
+	
+	</tr>
+	<tr>
+	<td align = "center">5th</td>
+	<td>Jon Lester</td>
+	<td>Bos Red Sox</td>
+	<td align = "center">6</td>
+	</tr>
+	
+</table>
+</td>	
+</table>
+
+<center>
+				<p1>Website Audio update</p1>
+				<br>
+					<audio controls height="40" width="40">
+					<source src="../Audio/webupdate.wav" type="audio/mpeg">
+					<source src="../Audio/webupdate.ogg" type="audio/ogg">
+					<source src ="../Audio/webupdate.mp3" type="audio/mp3">
+					<embed height="40" width="40" src="../Audio/webupdate.mp3">
+					</audio> 
+					</center>
+						<center><a href="#top">Top of page</a></center>
+				
+				</div> <!-----End of Content------>
+			
+				<div id="footer"> <!-----Start of Footer---->
+								<p> &copy;2013BaseballWorldStudios.com</p>
+				 </div> <!-----End of Footer---->
+			
+			</div>  <!-----End of Wrapper------>
+
+		</body> <!-----End of Body---->
+</html> 
